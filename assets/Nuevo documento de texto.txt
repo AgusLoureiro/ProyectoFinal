@@ -1,0 +1,201 @@
+}
+.logoHeader {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logoHeader img {
+	width: 400px;
+}
+
+.imageMain {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 4rem;
+} 
+
+.imgFooter Footer Footer {
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+ .imgFooter img{
+		height: 6rem;
+		width: 6rem;
+} 
+.imageMain img {
+	width: 400px;
+}
+
+.navFlex {
+	border: solid 3px #ff8000;
+	padding: 10px;
+	color: #ff8000;
+	font-size: 2.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.navFlex a {
+	color: black;
+}
+
+.clancysRgb {
+	color: #0377fc;
+}
+
+.esteticaTexto {
+	color: black;
+	font-size: 3rem;
+	font-family: cursive;
+	line-height: 1.5;
+	margin: 5rem;
+}
+
+.parra h1 {
+		color: #ff8000;
+		font-size: 3rem;
+		font-family: cursive;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 2rem;
+}
+
+.parra p {
+	font-size: 2rem;
+	font-family: cursive;
+	margin: 3rem;
+}
+
+.primerTitulo {
+	font-size: 4rem;
+	color: #ff8000;
+	font-style: Italic;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.galery {
+	padding: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.galery p {
+	font-weight: bold;
+	font-size: 11px;
+	font-family: cursive;
+}
+
+.linkReel {
+	font-size: 5rem;
+	color: #ff8000;
+	text-align: center;
+
+}	
+
+.galery img {
+	height: 50rem;
+	width: 50rem;
+}
+
+.imgText {
+	margin: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+footer p,
+footer a {
+	font-size: 2rem;
+
+}
+
+.faq {
+	margin: 2rem;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.faq h2 {
+	font-size: 3rem;
+	margin-top: 2rem;
+}
+
+.h1Preguntas {
+	color: #ff8000;
+	text-align: center;
+	font-size: 3rem;
+	margin-top: 2rem;
+}
+
+legend {
+	border-style: double;
+	border-color: #ffffff;
+}
+
+.formContact{
+	color: darkblue;
+	margin-top: 10rem;
+	font-size: 2rem;
+}
+main h1{
+	text-align: center;
+	color: #ff8000;
+	font-size: 3rem;
+	margin: 2rem;
+}
+.grid{
+	padding: 2rem;
+	border: 2rem;
+	margin: 2rem;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	justify-content: space-around;
+ 	}
+
+.grid p{
+	font-size: 2.5rem;
+	text-align: center;
+	color: #0c4900;
+}
+.grid img{
+	height: 50rem;
+	width: 50rem;
+}
+
+.pContact{
+	font-size: 2rem;
+}
+
+.grids{
+	display: grid;
+	grid-template-columns: ;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+	"header header"
+	"barraNav barraNav"
+	"img img"
+	"parrafos parrafos"
+	"footer footer";
+}

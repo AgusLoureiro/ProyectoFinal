@@ -1,0 +1,402 @@
+/* CSS INDEX */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Playfair Display', serif;
+	background-color: lightblue;
+	cursor: crosshair;
+}
+
+h1{
+	display: flex;
+	flex-direction: row;
+	text-align: center;	
+	font-size: 6rem;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(13, 100, 6);
+	font-size: 3rem;
+}
+ul{
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+
+.grid{
+	display: grid;
+	grid-template-areas: 
+	"logo"
+	"nav"
+	"main"
+	"textIndex"
+	"fotoFinal"
+	"footer";
+	grid-template-rows: auto;
+	grid-template-columns: 100%;
+}
+	
+.logo{
+	grid-area: logo;
+	text-align: center;
+}
+
+.logo img{
+	width: 600px;
+	height: 600px;
+}
+
+.navGrid {
+	background-color: #e6b78c;
+	grid-area: nav;
+	padding: 2rem;
+	margin: 2rem;
+	border: solid;
+	color: darkorange;
+	list-style: circle;
+}
+.mainGrid, .text{
+	grid-area: main;
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+	font-size: 2rem;
+}
+.mainGrid{
+	grid-area: main;
+	display: grid;
+	grid-template-columns: auto auto auto auto ;
+	justify-content: space-around;
+}
+
+.text{
+	margin: 3rem;
+	font-size: 2rem;
+	color: rgb(13, 100, 6);
+}
+.footerGrid{
+	grid-area: footer;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 10rem;
+	border-top: solid;
+	color: darkorange;
+}
+
+.footerGrid img {
+	width: 100px;
+	height: 100px;
+}
+
+.footerGrid p{
+	font-size: 3rem;
+}
+
+main img{
+	width: 400px;
+	height: 500px;
+}
+
+.textIndex{
+	grid-area: textIndex;
+	width: 100%;
+	/* align-items: center; */
+}
+
+.primerTitulo{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	font-size: 4rem;
+	color: darkorange;
+	text-align: center;
+}
+
+.esteticaTexto{
+	text-align: center;
+	font-size: 3rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	line-height: 40px;
+}
+
+.fotoFinal{
+	grid-area: fotoFinal;
+}
+
+.fotoFinal{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 8rem;
+}
+.foto{
+	width: 500px;
+	height: 600px;
+}
+
+/* GALERIA */
+main{grid-area: main;}
+.logo{grid-area: logo;}
+.navGrid{grid-area: nav;}
+.footerGrid{grid-area: footer;}
+
+.gridGalery{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.linkReel{
+	text-align: center;
+}
+
+.imgText{
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 4rem;
+	color: rgb(13, 100, 6);
+	}
+
+.galeryRecord{
+	padding-top: 2rem;
+	margin: 2rem;
+	font-size: 2rem;
+	color: rgb(100, 73, 43);
+}
+/* Sobre Nosotros */
+.mainSoNo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 2.6rem;
+	margin: 2rem;
+	text-align: center;
+}
+
+.mainSoNo h1{
+	font-size: 4rem;
+	color: darkgreen;
+	margin-bottom: 2rem;
+}
+
+/* Preguntas Frecuentes */
+.faq{
+	font-size: 3rem;
+	display: column;
+	text-align: center;
+	margin-top: 5rem;
+}
+
+.h1Preguntas{
+	padding-left: 2rem;
+	color: darkgreen;
+	text-decoration: underline;
+}
+
+/* Contacto */
+
+.pContact{
+	font-size: 3rem;
+
+}
+
+.formContact{
+	font-size: 3rem;
+	margin-left: 1rem;
+	margin-top: 5rem;
+	
+}
+
+/* mediaquery index */
+
+@media only screen and (max-width: 768px){
+	html{max-width: 100%;}	
+	body {background-color: rgb(245, 232, 220)}
+.grid{
+	display: grid;
+	grid-template-areas: 
+	"logo"
+	"nav"
+	"main"
+	"textIndex"
+	"fotoFinal"
+	"footer";
+	grid-template-rows: auto;
+	grid-template-columns: 100%;
+}
+.textIndex{
+	width: 100%;
+	grid-area: textIndex;
+}
+.logo img{
+	width: 300px;
+	height: 300px;
+}
+
+.navGrid {
+	grid-area: nav;
+	/* padding: 1rem;
+	margin: 1rem; */
+	color: darkorange;
+	list-style-type: none;
+	border: none;
+}
+
+.navGrid li{
+	/* border: solid; */
+}
+
+.navGrid a{
+	font-size: 2rem;
+}
+
+.mainGrid {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	justify-content: center;
+	/* font-size: 2rem; */
+}
+
+/* .text{
+	display: flex;
+	flex-direction: column;
+	font-size: 2rem;
+	float: left;
+} */
+
+.primerTitulo{
+	/* margin-top: 5rem;
+	margin-bottom: 5rem; */
+	font-size: 3rem;
+	color: darkorange;
+	text-align: center;
+}
+
+.esteticaTexto{
+	font-size: 2rem;
+	/* margin-left: 6rem;
+	margin-right: 6rem; */
+	line-height: 30px;
+}
+.esteticaTexto a{
+	font-size: 2rem;
+}
+
+.fotoFinal{
+	grid-area: fotoFinal;
+}
+
+.fotoFinal{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 8rem;
+}
+.foto{
+
+	width: 300px;
+	height: 300px;
+}
+
+.footerGrid{
+	grid-area: footer;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 10rem;
+	border-top: solid;
+	color: darkorange;
+}
+
+.footerGrid img {
+	width: 30px;
+	height: 30px;
+}
+
+.footerGrid a{
+	font-size: 2rem;
+}
+.footerGrid p{
+	font-size: 2rem;
+}
+ /* galeria */
+ 
+ .gridGalery{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.galeryRecord{
+	padding-top: 10rem;
+	font-size: 2rem;
+	text-align: center;
+	color: rgb(100, 73, 43);
+}
+
+/* Sobre nosotros */
+.mainSoNo {
+	font-size: 2rem;
+}
+.mainSoNo a{
+	font-size: 2rem;
+}
+.mainSoNo h1{
+	font-size: 3rem;
+}
+
+/* Preguntas frecuentes */
+
+.h1Preguntas{
+	font-size: 3rem;
+	margin-top: 2rem;
+}
+.faq{
+	font-size: 2rem;
+}
+.faq h2{
+	font-size: 3rem;
+}
+.faq a{
+	font-size: 2rem;
+}
+
+/* contacto */
+.hh{
+	font-size: 3rem;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+.pContact{
+	margin-left: 2rem;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formContact{
+	font-size: 2rem;
+	margin: 2rem;
+}
+
+}
