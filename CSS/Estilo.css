@@ -224,9 +224,7 @@ main{grid-area: main;}
 /* mediaquery index */
 
 @media only screen and (max-width: 768px){
-	html{max-width: 100%;
-		overflow: hidden;
-	}	
+	html{max-width: 100%;}
 	body {background-color: rgb(245, 232, 220)}
 	img{max-width: 100%;}
 .grid{
@@ -288,6 +286,7 @@ main{grid-area: main;}
 }
 
 .esteticaTexto{
+	margin: 0 2rem 0 2rem;
 	font-size: 2rem;
 	line-height: 20px;
 }
@@ -328,10 +327,10 @@ main{grid-area: main;}
 }
 
 .footerGrid a{
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 .footerGrid p{
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
  /* galeria */
  
