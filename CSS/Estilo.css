@@ -27,11 +27,6 @@ a{
 	color: rgb(13, 100, 6);
 	font-size: 3rem;
 }
-ul{
-	display: flex;
-	justify-content: center;
-	justify-content: space-evenly;
-}
 
 .grid{
 	display: grid;
@@ -64,7 +59,11 @@ ul{
 	border: solid;
 	color: darkorange;
 	list-style: circle;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
+
 .mainGrid, .text{
 	grid-area: main;
 	display: grid;
@@ -72,6 +71,7 @@ ul{
 	justify-content: center;
 	font-size: 2rem;
 }
+
 .mainGrid{
 	grid-area: main;
 	display: grid;
@@ -224,8 +224,11 @@ main{grid-area: main;}
 /* mediaquery index */
 
 @media only screen and (max-width: 768px){
-	html{max-width: 100%;}	
+	html{max-width: 100%;
+		overflow: hidden;
+	}	
 	body {background-color: rgb(245, 232, 220)}
+	img{max-width: 100%;}
 .grid{
 	display: grid;
 	grid-template-areas: 
@@ -248,12 +251,15 @@ main{grid-area: main;}
 }
 
 .navGrid {
+	background-color: #e6b78c;
 	grid-area: nav;
-	/* padding: 1rem;
-	margin: 1rem; */
+	border: solid;
 	color: darkorange;
-	list-style-type: none;
-	border: none;
+	list-style: circle;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .navGrid li{
@@ -273,13 +279,6 @@ main{grid-area: main;}
 	/* font-size: 2rem; */
 }
 
-/* .text{
-	display: flex;
-	flex-direction: column;
-	font-size: 2rem;
-	float: left;
-} */
-
 .primerTitulo{
 	/* margin-top: 5rem;
 	margin-bottom: 5rem; */
@@ -290,9 +289,7 @@ main{grid-area: main;}
 
 .esteticaTexto{
 	font-size: 2rem;
-	/* margin-left: 6rem;
-	margin-right: 6rem; */
-	line-height: 30px;
+	line-height: 20px;
 }
 .esteticaTexto a{
 	font-size: 2rem;
