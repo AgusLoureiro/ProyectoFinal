@@ -10,7 +10,7 @@ html {
 }
 
 body {
-	font-family: 'Playfair Display', serif;
+	font-family: 'EB Garamond', serif;
 	background-color: lightblue;
 	cursor: crosshair;
 }
@@ -81,7 +81,7 @@ a{
 
 .text{
 	margin: 3rem;
-	font-size: 2rem;
+	font-size: 3rem;
 	color: rgb(13, 100, 6);
 }
 .footerGrid{
@@ -118,7 +118,7 @@ main img{
 .primerTitulo{
 	margin-top: 5rem;
 	margin-bottom: 5rem;
-	font-size: 4rem;
+	font-size: rem;
 	color: darkorange;
 	text-align: center;
 }
@@ -126,8 +126,8 @@ main img{
 .esteticaTexto{
 	text-align: center;
 	font-size: 3rem;
-	margin-left: 3rem;
-	margin-right: 3rem;
+	margin-left: 20rem;
+	margin-right: 20rem;
 	line-height: 40px;
 }
 
@@ -252,14 +252,17 @@ main{grid-area: main;}
 	background-color: #e6b78c;
 	grid-area: nav;
 	border: solid;
-	color: darkorange;
-	list-style: circle;
+	color: #D5BDAF;
+	list-style: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 }
 
+.navGrid a{
+	color: black;
+}
 .navGrid li{
 	/* border: solid; */
 }
@@ -277,6 +280,10 @@ main{grid-area: main;}
 	/* font-size: 2rem; */
 }
 
+.mainGrid img{
+	border-radius: 40px;
+}
+
 .primerTitulo{
 	/* margin-top: 5rem;
 	margin-bottom: 5rem; */
@@ -286,7 +293,7 @@ main{grid-area: main;}
 }
 
 .esteticaTexto{
-	margin: 0 2rem 0 2rem;
+	margin: 0 5rem 0 5rem;
 	font-size: 2rem;
 	line-height: 20px;
 }
@@ -307,8 +314,8 @@ main{grid-area: main;}
 }
 .foto{
 
-	width: 300px;
-	height: 300px;
+	width: 400px;
+	height: 400px;
 }
 
 .footerGrid{
